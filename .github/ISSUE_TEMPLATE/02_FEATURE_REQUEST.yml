@@ -1,0 +1,106 @@
+title: "«your title goes here»"
+name: "Feature or Enhancement"
+description: "Extend or add new functionality to the source code."
+labels: ["enhancement"]
+assignees:
+  - "sirthxalot"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Introduction
+
+        Feature requests are welcome. But take a moment to [find out whether your
+        idea fits with the scope and aims of the project](./../discussions/categories/ideas).
+
+        It's up to you to make a strong case to convince the project's developers
+        of the merits of this feature.
+
+        We also recommend to avoid any personal details you don't want to share
+        with others within issues - others can read these information too.
+
+        Thank you!
+
+        ## Report
+  - type: input
+    id: version
+    attributes:
+      label: "Version"
+      description: "Which version is affected?"
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Summary"
+      description: "A clear and concise description of your idea."
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: "Benefits"
+      description: "Optional: Who or what are the benefits of this feature? Where is the value?"
+    validations:
+      required: false
+  - type: textarea
+    id: libraries
+    attributes:
+      label: "External Libraries"
+      description: "Optional: Does this change require any other third party modules or external libraries? If so please list them here."
+      placeholder: |
+        - Library Name (v.1.2.3) -> https://library.url
+        - Library Name 2 (v.1.2.3) -> https://library2.url
+        - ...
+    validations:
+      required: false
+  - type: textarea
+    id: possible-solution
+    attributes:
+      label: "Possible Solution"
+      description: |
+        Optional: Only if you have suggestions on how the implementation may look like?
+        Don't hesitate to create a pull request with your solution, it helps get faster feedback.
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional Context"
+      description: "Optional: Any other context you may want to share."
+  - type: dropdown
+    attributes:
+      label: "Feature or Enhancement?"
+      multiple: false
+      options:
+        - feature
+        - enhancement
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        A feature is new functionality that has been added to the API. The keyword is new, this means that you can now do something that was not possible before. Often new features don't break the backward compatibility which means that they can be declared as minors.
+
+        Enhancements on the other hand improve a current implementation of the API. So they often affect the code in a way that makes it backward incompatible. If that's the case a new major release must be declared (depending on its gravity).
+  - type: checkboxes
+    id: code_affects
+    attributes:
+      label: "Code Breakage"
+      description: "Optional: Please check how this affects the current implementation."
+      options:
+        - label: "Breaks the backward compatibility."
+        - label: "Causes code deprecations."
+  - type: markdown
+    attributes:
+      value: "## Checklist"
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "Agreements"
+      options:
+        - label: "I agree to follow the [code of conduct](./../blob/main/.github/CODE_OF_CONDUCT.md#contributor-covenant-code-of-conduct)."
+          required: true
+        - label: "I agree to follow the [contribution guideline](./../blob/main/.github/CONTRIBUTING.md#introduction)."
+          required: true
+        - label: "I have used the [GitHub issue search](./../issues/?q=label%3A\"enhancement\"+) to check if the issue has not been reported already."
+          required: true

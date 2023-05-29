@@ -1,0 +1,123 @@
+title: "«your title goes here»"
+name: "Bug Report"
+description: "Report a demonstrable problem that is caused by the code in the repository."
+labels: ["bug"]
+assignees:
+  - "sirthxalot"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Introduction
+
+        A bug is a demonstrable problem that is caused by the code in the repository.
+        Good bug reports are extremely helpful - thank you!
+
+        - Please **do not** report any security vulnerabilities (read [our security policy](./../blob/main/.github/SECURITY.md)).
+
+        - Please **do not** derail or troll issues. Keep the discussion on topic and
+          respect the opinions of others.
+
+        - Please **do not** use the issue tracker for personal support requests
+          (use our [discussion forum](./../discussions)).
+
+        - Please **do not** open issues or pull requests regarding third party code
+            e.g. Laravel (open them in their respective repositories).
+
+        ## Environment
+  - type: input
+    attributes:
+      label: I18n Version
+      description: Provide the I18n version that you are using.
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Laravel Version
+      description: Provide the Laravel version that you are using.
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: PHP Version
+      description: Provide the PHP version that you are using.
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Redis Driver
+      options:
+        - PhpRedis
+        - Predis
+  - type: input
+    attributes:
+      label: Redis Version
+      description: Provide the PhpRedis/Predis version that you are using.
+      placeholder: 1.0.0
+  - type: input
+    attributes:
+      label: Database Driver & Version
+      description: If applicable, provide the database driver and version you are using.
+      placeholder: "MySQL 8.0.31 for macOS 13.0 on arm64 (Homebrew)"
+    validations:
+      required: false
+  - type: dropdown
+    attributes:
+      label: I18n Driver
+      description: The driver can be found within the `i18n.driver` configuration.
+      options:
+        - file
+        - database
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "## Report"
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Summary"
+      description: "A clear and concise description of the problem. What happend? And what do you expect to happen?"
+    validations:
+      required: true
+  - type: textarea
+    id: how-to-reproduce
+    attributes:
+      label: "How to reproduce"
+      description: |
+        📣 **This is the most important part of the report** 📣
+        Without a way to easily reproduce your issue, there is little chance we will be able to help you and work on a fix.
+        Please, take the time to show us some code and/or config that is needed for others to reproduce the problem easily.
+    validations:
+      required: true
+  - type: textarea
+    id: possible-solution
+    attributes:
+      label: "Possible Solution"
+      description: |
+        Optional: Only if you have suggestions on a fix/reason for the bug.
+        Don't hesitate to create a pull request with your solution, it helps get faster feedback.
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional Context"
+      description: "Optional: Any other context about the problem: log messages, screenshots, etc."
+  - type: markdown
+    attributes:
+      value: "## Checklist"
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "Agreements"
+      options:
+        - label: "I agree to follow the [code of conduct](./../blob/main/.github/CODE_OF_CONDUCT.md#contributor-covenant-code-of-conduct)."
+          required: true
+        - label: "I agree to follow the [contribution guideline](./../blob/main/.github/CONTRIBUTING.md#introduction)."
+          required: true
+        - label: "I have used the [GitHub issue search](./../issues/?q=label%3A\"bug\"+) to check if the issue has not been reported already."
+          required: true
+        - label: "I have tried to reproduce the issue using the latest `main` or development branch in the repository."
+          required: true

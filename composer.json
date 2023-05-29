@@ -1,0 +1,62 @@
+{
+    "name": "sirthxalot/laravel-i18n",
+    "type": "library",
+    "description": "An internationalization package made for Laravel web applications.",
+    "keywords": ["laravel", "i18n", "translation"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexander Bösch",
+            "email": "sta.contribution@gmail.com",
+            "homepage": "https://github.com/sirthxalot/"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/sirthxalot/laravel-i18n/issues",
+        "source": "https://github.com/sirthxalot/laravel-i18n",
+        "docs": "https://sirthxalot.github.io/laravel-i18n"
+    },
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0",
+        "illuminate/filesystem": "^10.0",
+        "illuminate/translation": "^10.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.10",
+        "mockery/mockery": "^1.0",
+        "orchestra/testbench": "^8.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Sirthxalot\\Laravel\\I18n\\": "./src/",
+            "Sirthxalot\\Laravel\\I18n\\Database\\Factories\\": "./database/factories/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sirthxalot\\Laravel\\I18n\\Tests\\": "./tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "pint": "./vendor/bin/pint",
+        "post-autoload-dump": [
+            "@php vendor/bin/testbench package:discover --ansi"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sirthxalot\\Laravel\\I18n\\I18nServiceProvider",
+                "Sirthxalot\\Laravel\\I18n\\TranslationServiceProvider"
+            ]
+        }
+    }
+}

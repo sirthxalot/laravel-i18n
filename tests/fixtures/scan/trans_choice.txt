@@ -1,0 +1,2 @@
+{{ trans_choice('pluralization.ago', 5, ['value' => 5]) }}
+{{ trans_choice('not.present.anywhere', 5, ['value' => 5]) }}

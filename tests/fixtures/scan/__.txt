@@ -1,0 +1,7 @@
+{{ __('Hello :Name', ['name' => 'Dave']) }}
+{{ __('A dog barks.') }}
+{{ __('messages.nested.message') }}
+{{ __('i18n::languages.en') }}
+
+{{ __('Should not exist yo.') }}
+{{ __('i18n::languages.foo') }}

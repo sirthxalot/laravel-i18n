@@ -1,0 +1,94 @@
+title: "«your title goes here»"
+name: "Code Optimization"
+description: "Found something to improve within the source code? Please let us know what you would like to change."
+labels: ["refactor"]
+assignees:
+  - "sirthxalot"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Introduction
+
+        Code optimizations are welcome. But take a moment to [find out
+        whether your idea fits with the scope and aims of the project](./../discussions/categories/ideas).
+
+        It's up to you to make a strong case to convince the project's
+        developers of the merits of this optimization.
+
+        We also recommend to avoid any personal details you don't want to share
+        with others within issues - others can read these information too.
+
+        Thank you!
+
+        ## Report
+  - type: input
+    id: version
+    attributes:
+      label: "Version"
+      description: "Which version is affected?"
+      placeholder: "x.y.z"
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Summary"
+      description: "A clear and concise description of your idea."
+    validations:
+      required: true
+  - type: textarea
+    id: libraries
+    attributes:
+      label: "External Libraries"
+      description: "Optional: Does this change require any other third party modules or external libraries? If so please list them here."
+      placeholder: |
+        - Library Name (v.1.2.3) -> https://library.url
+        - Library Name 2 (v.1.2.3) -> https://library2.url
+        - ...
+    validations:
+      required: false
+  - type: textarea
+    id: possible-solution
+    attributes:
+      label: "Possible Solution"
+      description: |
+        Optional: Only if you have suggestions on how the implementation may look like?
+        Don't hesitate to create a pull request with your solution, it helps get faster feedback.
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional Context"
+      description: "Optional: Any other context you may want to share."
+  - type: checkboxes
+    id: code_impact
+    attributes:
+      label: "Coding Impact"
+      description: "Optional: Choose the coding impacts and describe them in additional context, please."
+      options:
+        - label: "Affects performance."
+        - label: "Affects code readability."
+        - label: "Increases maintainability."
+        - label: "Follows a common convention."
+  - type: checkboxes
+    id: code_affects
+    attributes:
+      label: "Code Breakage"
+      description: "Optional: Please check how this affects the current implementation."
+      options:
+        - label: "Breaks the backward compatibility."
+        - label: "Causes code deprecations."
+  - type: markdown
+    attributes:
+      value: "## Checklist"
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "Agreements"
+      options:
+        - label: "I agree to follow the [code of conduct](./../blob/main/.github/CODE_OF_CONDUCT.md#contributor-covenant-code-of-conduct)."
+          required: true
+        - label: "I agree to follow the [contribution guideline](./../blob/main/.github/CONTRIBUTING.md#introduction)."
+          required: true
+        - label: "I have used the [GitHub issue search](./../issues/?q=label%3A\"refactor\"+) to check if the issue has not been reported already."
+          required: true

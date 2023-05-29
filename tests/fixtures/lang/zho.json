@@ -1,0 +1,6 @@
+{
+    "Hello": "你好 :Name",
+    "There is one apple|There are many apples": "有一個蘋果|有很多蘋果 :count",
+    "{0} There are none|[1,19] There are some|[20,*] There are many": "{0} 沒有了|[1,19] 有一些|[20,*] 有許多",
+    "{1} :value minute ago|[2,*] :value minutes ago": "{1} 一分鐘前|[2,*] :value 幾分鐘前"
+}
