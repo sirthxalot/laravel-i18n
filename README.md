@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/sirthxalot/laravel-i18n/actions"><img src="https://img.shields.io/github/actions/workflow/status/sirthxalot/laravel-i18n/run-tests.yml?branch=main&label=tests" alt="Build Status"></a>
+<a href="https://github.com/sirthxalot/laravel-i18n/actions"><img src="https://img.shields.io/github/actions/workflow/status/sirthxalot/laravel-i18n/l10-run-tests.yml?branch=main&label=tests" alt="Build Status"></a>
 <a href="https://packagist.org/packages/sirthxalot/laravel-i18n"><img src="https://img.shields.io/packagist/dt/sirthxalot/laravel-i18n" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/sirthxalot/laravel-i18n"><img src="https://img.shields.io/packagist/v/sirthxalot/laravel-i18n" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/sirthxalot/laravel-i18n"><img src="https://img.shields.io/packagist/l/sirthxalot/laravel-i18n" alt="License"></a>
