@@ -64,7 +64,7 @@ This open-sourced software is licensed under [the MIT license].
 
 [sirthxalot]:                             https://github.com/sirthxalot
 [official documentation]:                 https://sirthxalot.github.io/laravel-i18n
-[install]:                                https://sirthxalot.github.io/laravel-i18n/v/main/guide/start/install/
+[install]:                                https://sirthxalot.github.io/laravel-i18n/v/1.x/guide/start/install/
 [issue tracker]:                          https://github.com/sirthxalot/laravel-i18n/issues
 [discussion forum]:                       https://github.com/sirthxalot/laravel-i18n/discussions
 
