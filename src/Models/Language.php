@@ -27,7 +27,7 @@ class Language extends Model implements LanguageContract
     {
         parent::__construct($attributes);
         $this->connection = config('i18n.database.connection');
-        $this->table = config('i18n.database.languages_table');
+        $this->table = config('i18n.database.tables.languages');
     }
 
     /**

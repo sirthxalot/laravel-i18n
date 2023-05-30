@@ -27,7 +27,7 @@ class Translation extends Model implements TranslationContract
         parent::__construct($attributes);
 
         $this->connection = config('i18n.database.connection');
-        $this->table = config('i18n.database.languages_table');
+        $this->table = config('i18n.database.tables.translations');
     }
 
     /**
