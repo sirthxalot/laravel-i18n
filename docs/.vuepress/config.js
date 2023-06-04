@@ -147,6 +147,10 @@ module.exports = {
                                     link: '/v/1.x/guide/usage/validation/form/request/add/translation/',
                                 },
                                 {
+                                    text: 'Set Translation Request',
+                                    link: '/v/1.x/guide/usage/validation/form/request/set/translation/',
+                                },
+                                {
                                     text: 'Update Translation Request',
                                     link: '/v/1.x/guide/usage/validation/form/request/update/translation/',
                                 },

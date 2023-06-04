@@ -1,10 +1,11 @@
 <?php
 
-return [
-    'empty' => '',
-    'only' => 'j',
-    'nested' => [
-        'message' => 'nested message',
-        'welcome' => 'Hello :NAME',
-    ],
-];
+return array (
+  'empty' => '',
+  'only' => 'j',
+  'nested' => 
+  array (
+    'message' => 'nested message',
+    'welcome' => 'Hello :NAME',
+  ),
+);
