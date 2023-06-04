@@ -4,7 +4,6 @@ namespace Sirthxalot\Laravel\I18n\Tests\Http\Requests;
 
 use Sirthxalot\Laravel\I18n\Http\Requests\SetTranslationRequest;
 use Sirthxalot\Laravel\I18n\Tests\FileTestCase;
-use Sirthxalot\Laravel\I18n\Translation;
 
 class SetTranslationRequestTest extends FileTestCase
 {

@@ -1,9 +1,8 @@
 <?php
 
-return array (
-  'nested' => 
-  array (
-    'message' => 'verschachtelte Nachricht',
-    'welcome' => 'Hallo :NAME',
-  ),
-);
+return [
+    'nested' => [
+        'message' => 'verschachtelte Nachricht',
+        'welcome' => 'Hallo :NAME',
+    ],
+];
