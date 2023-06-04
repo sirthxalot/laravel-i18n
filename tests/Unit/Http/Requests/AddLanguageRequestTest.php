@@ -1,12 +1,12 @@
 <?php
 
-namespace Sirthxalot\Laravel\I18n\Tests\Unit\Validation\Presets;
+namespace Sirthxalot\Laravel\I18n\Tests\Http\Requests;
 
 use Illuminate\Validation\ValidationException;
 use Sirthxalot\Laravel\I18n\Tests\FileTestCase;
 use Sirthxalot\Laravel\I18n\Translation;
 
-class ValidateLanguageAddTest extends FileTestCase
+class AddLanguageRequestTest extends FileTestCase
 {
     /** @test */
     public function it_throws_a_validation_exception()

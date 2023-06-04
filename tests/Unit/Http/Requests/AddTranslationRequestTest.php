@@ -1,11 +1,11 @@
 <?php
 
-namespace Sirthxalot\Laravel\I18n\Tests\Unit\Validation\Presets;
+namespace Sirthxalot\Laravel\I18n\Tests\Http\Requests;
 
 use Sirthxalot\Laravel\I18n\Tests\FileTestCase;
 use Sirthxalot\Laravel\I18n\Translation;
 
-class ValidateTranslationAddTest extends FileTestCase
+class AddTranslationRequestTest extends FileTestCase
 {
     /** @test */
     public function its_locale_is_required()
