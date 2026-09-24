@@ -1,6 +1,9 @@
 name: "run unit and feature tests on laravel 10"
 
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   test:
