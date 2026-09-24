@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-0ac8ee07","path":"/license/","title":"Software License","lang":"en-US","frontmatter":{"title":"Software License"},"headers":[],"git":{"updatedTime":1790232180000,"contributors":[{"name":"Alexander Bösch","email":"sta.contribution@gmail.com","commits":1}]},"filePathRelative":"license/index.md"}');export{e as data};
